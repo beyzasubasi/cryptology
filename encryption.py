@@ -19,14 +19,14 @@ def encryption():
 
     sum = 0
     for i in key:
-        sum = sum + i   #anahtar değerimin toplamını alıyorum
+        sum = sum + i   
 
     print(sum)
 
     text = str(input("Please enter the text you want to encrypt. \n>> "))
     text = text.lower()
 
-    letters = [c for c in text]  # içindeki kelimeyi harflere böldüm boşluklar dahil oü
+    letters = [c for c in text]  
 
     password = []
 
@@ -238,11 +238,11 @@ def encryption():
 
     full_lock = []
 
-    for i in password:    #anahtar değeriYLE her harfin değerini çarptım bu bana şifreyi verecektir
+    for i in password:    
         i = i * sum
         full_lock.append(i)
 
-    x = str(random.randrange(1, 10000))     #dosya adını random atıyorum
+    x = str(random.randrange(1, 10000))     
 
     print("\n\nName of The File: " + x + ".txt'dir.\n\n")
 
